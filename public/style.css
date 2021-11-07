@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: none; 
+}
+::-webkit-scrollbar-thumb {
+    background: #d9d9d9; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c9c9c9; 
+}
+
+#particles-js {
+    background: #642CA9;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+button {
+    padding: 6px 20px;
+    background: #642CA9;
+    color: #ffffff;
+    font-weight: bold;
+    border: solid 1px rgba(0,0,0,.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.danger {
+    background: #FE5F55;
+}
+
+.container {
+    padding: 20px 60px;
+    margin: 0 120px;
+    background: #ffffff;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 4px 2px 1px rgb(0,0,0,.5);
+}
+
+.content {
+    width: 100%;
+}
+
+.well {
+    font-size: .9rem;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px 0 10px;
+    box-shadow: inset 1px 1px 10px 1px #e9e9e9;
+}
+
+.alert {
+    padding: 10px 20px;
+    background: #ffefec;
+    margin: 10px 0;
+    border: #efdfdc solid 1px;
+    border-radius: 10px;
+    font-size: .8rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dismiss {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+
+.messages {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.message .avatar {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.message .message_content {
+    margin: 0 15px;
+}
+
+.message .message_content .username {
+    font-weight: 1.1rem;
+    font-weight: bold;
+}
+
+.message .message_content .date {
+    font-size: .8rem;
+    opacity: .8;
+    margin: 0 10px;
+}
+
+.form-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+[data-js="chat_content"] {
+    margin: 30px 0 0;
+    height: 300px;
+}
+
+.input_message {
+	background: #f9f9f9;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 1px 1px 10px 1px #e9e9e9;
+}
+.input_message textarea {
+    background: none;
+    padding-right: 40px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+}
+.input_message button {
+	position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.input_message button img {
+    height: 25px;
+}
+
+
+
+
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.list .item {
+    margin: 40px 30px;
+    opacity: .7;
+    cursor: pointer;
+    transition: linear .2s opacity;
+}
+.list .item.active,
+.list .item:hover {
+    opacity: 1;
+}
+
+.list .item img {
+    width: 60px;
+    filter: grayscale(100%);
+    transition: linear .2s filter;
+}
+.list .item.active img, 
+.list .item:hover img {
+    filter: grayscale(0);
+}
+.list .item span {
+    text-align: center;
+    display: block;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+input {
+    background: #f9f9f9;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 1px 1px 10px 1px #e9e9e9;
+    border: none;
+    outline: none;
+}

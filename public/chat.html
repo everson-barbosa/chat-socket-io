@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap">
+</head>
+
+<body>
+    <div class="container">
+    
+        <div class="content">
+            <button class="danger" data-js="logout">Logout</button>
+            <div data-js="username" class="well">
+                Olá #username - Sala
+            </div>
+
+            <div data-js="chat_content">
+
+                <div class="messages" data-js="messages">
+                    
+                </div>
+
+            </div>
+
+
+            <div class="input_message" data-js="message_input">
+                <textarea placeholder="Escreva sua mensagem..."></textarea>
+                <button>
+                    Enviar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="particles-js"></div>
+
+
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chat.js"></script>
+<script type="text/javascript" src="js/particles/particles.js"></script>
+<script type="text/javascript" src="js/particles/app.js"></script>
+
+</html>
